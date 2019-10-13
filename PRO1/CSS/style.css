@@ -32,7 +32,7 @@ td {
     /* margin : 0; */
 
 
-    
+   -clip: 
 }
 tr td {
     width:100px;
@@ -41,7 +41,6 @@ tr td {
 /* td:hover{
     opacity:0.4;
   } */
-
 
   .button{
   
