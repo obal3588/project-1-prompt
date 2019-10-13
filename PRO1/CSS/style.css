@@ -1,0 +1,57 @@
+body{
+    background: rgb(80, 77, 77);
+    color:#FDFDFE;
+    font-size:40px;
+  
+  }
+
+  .continer{
+    position: absolute;
+     top: 50%;
+     left: 50%;
+      transform: translate(-50%, -50%); 
+     display:block;
+ 
+
+  }
+
+  .grid{
+    width:400px;
+     height:400px;
+  }
+   
+   table {
+     width:300px;
+     height:300px;
+    
+   }
+
+td {
+    border: 2px solid black;
+    padding-left:15%;
+    /* margin : 0; */
+
+
+    
+}
+tr td {
+    width:100px;
+    height:100px;
+}
+td:hover{
+    opacity:0.4;
+  }
+
+
+  .button{
+  
+    border: 0;
+    /* background: #444; */
+    /* color: #fff; */
+    width: 77%;
+    padding: 15px;
+    border-radius: 5px;
+      
+}
+
+
