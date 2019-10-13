@@ -1,10 +1,11 @@
 
 // grid=[[null,null,null],[null,null,null],[null,null,null]]
-
+let grid=new Array(8);
 $(document).ready(function () {
     let counter =0;
     let start =false;
     let player ="player 1"
+    let playerValue =true;
     const cells=$('td');
   
 
@@ -13,18 +14,32 @@ $(document).ready(function () {
         if (!start)
             return
         
-        const col =this.id.match(/\d+/g); 
-        const temp =$(this).parent();
-        const row = temp[0].className.match(/\d+/g); 
+        const id =this.id.match(/\d+/g); 
+        // const temp =$(this).parent();
+        // const row = temp[0].className.match(/\d+/g); 
         
+        
+        if (playerValue){
+            $(this).append("<b>X</b>");
+       // $(this).css("background-color","red");
+            playerValue=false;
+            grid[id]="X";
+            player="player 2"
+            counter++;
 
-        console.log( grid)
-        console.log(row);
-        console.log(col);
-        
+        }
+        else{
+            $(this).append("<b>o</b>");
+            // $(this).css("background-color","red");
+                 playerValue=true;
+                 grid[id]="O";
+                 player="player 1"
+                 counter++;
+        }
         
        // debugger;
-        $(this).css("background-color","whi");
+      
+       $(".player p").text(player);
         $(this).unbind();
 
         

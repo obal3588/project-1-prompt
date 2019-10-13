@@ -38,9 +38,9 @@ tr td {
     width:100px;
     height:100px;
 }
-td:hover{
+/* td:hover{
     opacity:0.4;
-  }
+  } */
 
 
   .button{
@@ -51,7 +51,6 @@ td:hover{
     width: 77%;
     padding: 15px;
     border-radius: 5px;
-      
 }
 
 
